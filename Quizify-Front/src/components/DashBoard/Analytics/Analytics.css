@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.analytics-title {
+  margin: 40px 450px 80px;
+  font-size: 48px;
+  color: #5076ff;
+}
+.table-container {
+  overflow-x: auto;
+  border-radius: 10px; /* Add border-radius to the container */
+}
+
+table {
+  width: 80%;
+  border-collapse: separate; /* Use 'separate' to allow border-radius on individual cells */
+  border-spacing: 0; /* Removes spacing between cells */
+  margin: 20px auto;
+  font-size: 1em;
+  min-width: 600px;
+  border-radius: 10px; /* Add border-radius to the table */
+  overflow: hidden; /* Clip the content inside the rounded corners */
+  border: none;
+}
+
+thead tr {
+  background-color: #377dff;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+thead th,
+tbody td {
+  padding: 12px 15px;
+  border: none;
+}
+
+thead th:first-child,
+tbody td:first-child {
+  border-radius: 10px 0 0 10px; /* Round the top-left and bottom-left corners */
+}
+
+thead th:last-child,
+tbody td:last-child {
+  border-radius: 0 10px 10px 0; /* Round the top-right and bottom-right corners */
+}
+
+.odd-row {
+  background-color: #b3c4ff; /* Background color for odd rows */
+}
+
+.even-row {
+  background-color: transparent; /* Transparent background color for even rows */
+}
+
+tbody tr:last-of-type td:first-child {
+  border-radius: 0 0 0 10px; /* Round the bottom-left corner of the last row */
+}
+
+tbody tr:last-of-type td:last-child {
+  border-radius: 0 0 10px 0; /* Round the bottom-right corner of the last row */
+}
+
+tbody tr:last-of-type {
+  border-bottom: 2px solid #377dff; /* Add border to the last row */
+}
+
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.icon.edit {
+  background-image: url("/images/edit.png"); /* Updated path */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.icon.delete {
+  background-image: url("/images/delete.png"); /* Updated path */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.icon.share {
+  background-image: url("/images/share.png"); /* Updated path */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.analysis-link {
+  color: #377dff;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+.analysis-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

@@ -1,0 +1,33 @@
+.custom-toast {
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.custom-toast::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #4caf50; /* Green color for the duration bar */
+  animation: shrinkBar 4s linear forwards; /* 4s should match the duration */
+}
+
+@keyframes shrinkBar {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+@keyframes progress {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}

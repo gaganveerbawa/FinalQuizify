@@ -1,0 +1,176 @@
+styles.css .quiz-container {
+  /* max-width: 600px; */
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  display: flex; /* Add Flexbox */
+  flex-direction: column; /* Arrange content vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.quiz-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.question {
+  font-size: 32px;
+  text-align: center;
+  color: #444;
+}
+.option-content {
+  display: flex;
+  gap: 10px;
+}
+.options {
+  margin-top: 20px;
+  list-style: none;
+  padding: 10px;
+  gap: 20px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr); /* Default 2x2 grid layout */
+}
+
+@media (max-width: 768px) {
+  .options {
+    gap: 10px;
+    grid-template-columns: 1fr; /* Stack options vertically on small screens */
+  }
+}
+
+.option-button {
+  width: 100%; /* Make the option button take full width in its grid column */
+  max-width: 200px; /* Set a max width for larger screens */
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.option-image {
+  max-width: 100%; /* Ensure image takes full width of the option button */
+  height: auto;
+}
+
+.option-button:hover {
+  background-color: #f1f1f1;
+}
+
+.option-button.selected {
+  background-color: #d4edda;
+  border-color: #28a745;
+}
+
+.timer {
+  font-size: 18px;
+  color: #e3342f;
+  text-align: right;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.next-button {
+  /* display: block; */
+  margin: 2rem 42rem;
+  width: 6rem;
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.next-button:disabled {
+  background-color: #ccc;
+}
+
+.option-image {
+  max-width: 100px; /* Adjust based on your design */
+  height: auto;
+}
+
+.questions-index {
+  font-size: 24px;
+  color: #474444;
+  margin-left: 50px;
+  font-weight: 700;
+}
+.congratulations-container {
+  margin: 40px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Center text for mobile view */
+}
+
+.congratulations-container img {
+  max-width: 80%; /* Make the image responsive */
+  height: auto;
+  margin-bottom: 20px; /* Add some space below the image */
+}
+
+.score {
+  font-size: 24px;
+  font-weight: 800;
+  color: #28a745;
+}
+
+.score-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .quiz-container {
+    padding: 10px;
+  }
+
+  .quiz-title {
+    font-size: 20px;
+  }
+
+  .question {
+    font-size: 24px;
+  }
+
+  .options {
+    gap: 10px;
+    grid-template-columns: 1fr; /* Stack options vertically */
+  }
+
+  .next-button {
+    width: 100%; /* Make the next button full width */
+    font-size: 14px; /* Slightly smaller font size */
+    margin-left: 0;
+  }
+
+  .congratulations-container img {
+    max-width: 100%; /* Make the image take full width */
+  }
+
+  .score-title {
+    font-size: 20px;
+  }
+
+  .score {
+    font-size: 20px;
+  }
+}

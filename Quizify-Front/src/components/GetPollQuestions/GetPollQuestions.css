@@ -1,0 +1,22 @@
+.end-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  background-color: #f5f5f5; /* Optional: Background color */
+  text-align: center; /* Center text inside the container */
+}
+
+.end-title {
+  font-size: 48px; /* Adjust the font size as needed */
+  color: #474444;
+  font-weight: 600;
+  margin: 0; /* Remove default margin */
+}
+
+/* Mobile view adjustments */
+@media (max-width: 600px) {
+  .end-title {
+    font-size: 20px; /* Slightly smaller font size for mobile */
+  }
+}

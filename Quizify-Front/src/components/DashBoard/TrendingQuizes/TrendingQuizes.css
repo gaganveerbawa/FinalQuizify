@@ -1,0 +1,81 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.dashboard-top {
+  display: flex;
+  margin: 80px;
+  gap: 20px;
+}
+.top-content {
+  width: 18rem;
+  height: 10rem;
+  font-size: 48px;
+  font-weight: 600;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.top-content span {
+  margin-left: 10px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.qu {
+  padding-left: 80px;
+  color: #ff5d01;
+}
+.cr {
+  color: #60b84b;
+}
+.im {
+  padding-left: 50px;
+  color: #5076ff;
+}
+.quizzes {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 20px;
+}
+
+.quiz {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  position: relative;
+}
+
+.trending-quiz-title {
+  color: #474444;
+  margin-left: 85px;
+  margin-bottom: 50px;
+}
+.quiz h2 {
+  color: #474444;
+}
+
+.quiz p {
+  color: #60b84b;
+}
+
+.quiz img {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+.impressions {
+  position: absolute;
+  right: 45px;
+  top: 12px;
+}
+
+.Quesion-count {
+  font-size: 28px;
+} */

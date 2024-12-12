@@ -1,0 +1,14 @@
+.poll-container {
+  display: flex;
+  gap: 20px;
+}
+
+.poll-options {
+  display: flex;
+  margin: 18px;
+  gap: 20px;
+  justify-content: space-around;
+}
+.poll-vote {
+  font-size: 3rem;
+}
